@@ -8,22 +8,19 @@ body {
 }
 
 .logo {
-  width: 160px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  width: 120px;
+  margin: 20px auto 10px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   filter: drop-shadow(0 0 8px white);
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 28px;
   margin: 10px 0;
 }
 
 .credit {
-  font-size: 16px;
+  font-size: 14px;
   color: #ccc;
   margin-top: -5px;
   margin-bottom: 20px;
@@ -32,20 +29,20 @@ h1 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 120px);
-  gap: 16px;
+  grid-template-columns: repeat(4, 80px);
+  gap: 12px;
   justify-content: center;
   margin: 0 auto;
   padding-bottom: 20px;
 }
 
 .card {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   background-color: #444;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,11 +60,11 @@ h1 {
 }
 
 #resetBtn {
-  margin: 30px auto;
-  padding: 14px 28px;
-  font-size: 18px;
+  margin: 25px auto;
+  padding: 10px 20px;
+  font-size: 16px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #00bfff;
   color: white;
   cursor: pointer;
@@ -80,7 +77,7 @@ h1 {
 }
 
 #resultMessage {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 20px;
   color: lime;
 }
@@ -96,37 +93,37 @@ h1 {
   }
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 28px;
-  }
-
-  .credit {
-    font-size: 14px;
-  }
-
-  .logo {
-    width: 120px;
-  }
-
+/* MOBILE FIX */
+@media (max-width: 500px) {
   .grid {
-    grid-template-columns: repeat(3, 100px);
-    gap: 14px;
+    grid-template-columns: repeat(3, 70px);
+    gap: 10px;
   }
 
   .card {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .credit {
+    font-size: 12px;
+  }
+
+  .logo {
     width: 100px;
-    height: 100px;
-    font-size: 32px;
   }
 
   #resetBtn {
-    font-size: 16px;
-    padding: 12px 24px;
+    font-size: 14px;
+    padding: 8px 16px;
   }
 
   #resultMessage {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
