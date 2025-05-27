@@ -5,9 +5,6 @@ const totalPairs = cards.length / 2;
 
 const message = document.createElement('div');
 message.id = 'resultMessage';
-message.style.marginTop = '30px';
-message.style.fontSize = '24px';
-message.style.color = 'lime';
 document.body.appendChild(message);
 
 cards.forEach(card => {
